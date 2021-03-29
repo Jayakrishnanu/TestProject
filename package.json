@@ -1,0 +1,24 @@
+{
+  "name": "TestProject",
+  "version": "1.0.0",
+  "main": "index.js",
+  "respository": "",
+  "author": "jay <jkrishnanu@gmail.com",
+  "license": "MIT",
+  "devDependecies": {
+    "appetize-cli": "0.1.0",
+    "auto-plugin-appetize-cleanup": "0.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 9006 --quiet",
+    "build": "node ./buildStories.js && yarn build-storybook -o ./docs",
+    "clean": "rm -rf node_nodules"
+  },
+  "dependencies": {
+    "@storybook/native": "1.0.3",
+    "@storybook/native-addon": "1.0.3",
+    "@storybook/storybook-deployer": "2.8.7",
+    "pr-cli": "8.0.0"
+  }
+}
